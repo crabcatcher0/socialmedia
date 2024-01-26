@@ -1,0 +1,10 @@
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a {
+    text-decoration: none;
+  }
