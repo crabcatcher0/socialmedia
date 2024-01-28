@@ -333,7 +333,7 @@
         "kind": 5,
         "importPath": "project_social.app_social.urls",
         "description": "project_social.app_social.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', home, name='home'),\n    path('signup', register, name='signup'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', home, name='home'),\n    path('signup', register, name='signup'),\n    path('profile', profile, name='profile'),\n]",
         "detail": "project_social.app_social.urls",
         "documentation": {}
     },
@@ -352,6 +352,15 @@
         "importPath": "project_social.app_social.views",
         "description": "project_social.app_social.views",
         "peekOfCode": "def register(request):\n    register_form_data = UserForm()\n    if request.method == 'POST':\n        register_form_data = UserForm(request.POST)\n        if register_form_data.is_valid():\n            register_form_data.save()\n            messages.success (request, 'Successfully created account.')\n            return redirect('home')\n    context = {\n        'register_form_data': register_form_data,",
+        "detail": "project_social.app_social.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "project_social.app_social.views",
+        "description": "project_social.app_social.views",
+        "peekOfCode": "def profile(request):\n    return render(request, 'profile.html')",
         "detail": "project_social.app_social.views",
         "documentation": {}
     },

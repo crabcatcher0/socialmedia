@@ -27,3 +27,7 @@ def register(request):
     }
 
     return render(request, 'signup.html', context)
+
+
+def profile(request):
+    return render(request, 'profile.html')
