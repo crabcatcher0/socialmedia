@@ -16,19 +16,27 @@
                                 <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
                             </div>
                         </form>
+                        <div class ="icon me-2">
+                        <i class="fa-solid fa-user-group"></i>
+                        <i class="fa-solid fa-comment"></i>
+                        <i class="fa-solid fa-bell"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <!-- Inner card -->
-                    <div class="card">
-                        <div class="card-header">
+                    <div class="card-header">
+                        <div class="profile-container">
                             <div class="d-flex align-items-center">
                                 <!-- User Profile Picture -->
-                                <img src="user_profile_picture_url.jpg" class="img-thumbnail rounded-circle me-2" alt="User Profile">
+                                <img src="{% static 'app_social/images/img1.jpg' %}" class="circle-image me-2" style="height: 50px; border-radius: 50%;" alt="User Profile">
                                 <div>
                                     <h5 class="mb-0">User's Name</h5>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                      
                         </div>
                         
                         <div class="card-body">
